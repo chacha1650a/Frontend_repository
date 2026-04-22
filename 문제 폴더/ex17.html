@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 17번</title>
+    <style>
+    .box-a {
+        width: 200px;
+        padding: 20px;
+        border: 5px solid black;
+        box-sizing: content-box; 
+    }
+
+    .box-b {
+        width: 200px;
+        padding: 20px;
+        border: 5px solid black;
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+    <div class="box-a"></div>
+    <div class="box-b"></div>
+</body>
+</html>
+
+<!-- box-a는 박스의 사이즈를 콘텐츠 박스 기준으로 하였음으로 콘텐츠 영역에서부터의 크기를 기준으로 하기에 최종 크기가 250 x 50 이나
+ box-b는 보더 영역을 기준을 콘텐츠 영역과 패딩의 크기를 설정하기에 값이 줄어들어 200 x 50이 된다.-->

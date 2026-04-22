@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 9번</title>
+    <style>
+        form {
+            width: 400px;
+            margin: auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+
+        .submit {
+            background-color: #F97316;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="/login" method="post">
+        <div>
+            <label for="username">이름: </label>
+            <input type="text" id="username" class="input" placeholder="이름을 입력 해주세요.">
+        </div>
+        <div>
+            <label for="userEmail">이메일: </label>
+            <input type="email" id="userEmail" class="input" placeholder="이메일을 입력 해주세요.">
+        </div>
+        <div>
+            <label for="userPassword">비밀번호: </label>
+            <input type="password" id="userPassword" class="input" placeholder="비밀번호를 입력 해주세요.">
+        </div>
+        <div>
+            <label for="userBirth">생년월일: </label>
+            <input type="datetime-local" class="input" id="userBirth">
+        </div>
+        <div>
+            <label for="userGender">성별: </label>
+            <label for="male">남성</label>
+            <input type="radio" id="male" name="userGender">
+            <label for="female">여성</label>
+            <input type="radio" id="female" name="userGender">
+        </div>
+        <div>
+            <label for="harbit">관심분야: </label>
+            <label for="Java">Java</label>
+            <input type="checkbox" id="Java" name="harbit">
+            <label for="Python">Python</label>
+            <input type="checkbox" id="Python" name="harbit">
+            <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" id="JavaScript" name="harbit">
+        </div>
+        <div>
+            <textarea name="" id="self-introduction" rows="5" cols="40" placeholder="자기소개 입력란" class="input"></textarea>
+        </div>
+        <button type="button" class="submit">제출</button>
+        </form>
+</body>
+</html>
+<!--[구성]
+- 이름: type="text"
+- 이메일: type="email"
+- 비밀번호: type="password"
+- 생년월일: type="date"
+- 성별: type="radio" (남/여)
+- 관심분야: type="checkbox" (Java/Python/JavaScript)
+- 자기소개: textarea (rows="5", cols="40")
+- 가입하기: type="submit"-->

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 28번</title>
+    <style>
+        .city {
+            width: 300px;
+            padding: 10px;
+            border: 2px solid #1C7293;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/search" method="get">
+        <div>
+        <input type="text" list="cityList" class="city">
+            <datalist id="cityList">
+                <option value="서울">서울</option>
+                <option value="부산">부산</option>
+                <option value="대구">대구</option>
+                <option value="인천">인천</option>
+                <option value="광주">광주</option>
+                <option value="대전">대전</option>
+                <option value="울산">울산</option>
+                <option value="세종">세종</option>
+                <option value="제주">제주</option>
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- [구성]
+- input type="text" + datalist
+- 옵션: 서울, 부산, 대구, 인천, 광주, 대전, 울산, 세종, 제주
+- form 제출 시 action="/search", method="get"
+- input 스타일: 너비 300px, 패딩 10px, 테두리 2px solid #1C7293, border-radius 8px -->

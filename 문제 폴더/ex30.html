@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 30번</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        .login-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 40px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            display: block;
+        }
+
+        .save-container {
+            margin-bottom: 20px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .loginButton {
+            width: 100%;
+            padding: 14px;
+            background-color: #065A82;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .loginButton:hover {
+            background-color: #004361;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        a {
+            color: #065A82;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>로그인</h1>
+        
+        <div>
+            <label for="username">아이디: </label>
+            <input type="text" id="username" placeholder="Username">
+        </div>
+        
+        <div>
+            <label for="password">비밀번호: </label>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        
+        <div class="save-container">
+            <input type="checkbox" id="saveId">
+            <label for="saveId">아이디 기억하기</label>
+        </div>
+        
+        <button type="button" class="loginButton">로그인</button>
+        
+        <p>계정이 없으신가요? <a href="#" target="_blank">회원가입</a></p>
+    </div>
+</body>
+</html>

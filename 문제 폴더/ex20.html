@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 20번</title>
+    <style>
+        .parent {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        .child {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">여기!</div>
+    </div>
+</body>
+</html>
+
+
+<!-- 해당 코드에서 부모에 position: relative; 가 존재하지 않으면 자식 요소에서 위치를 설정 할 수 없기에
+ relative가 빠지는 순간 class="child"인 구역은 사라지게 된다-->

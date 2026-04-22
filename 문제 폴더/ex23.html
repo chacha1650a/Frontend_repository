@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 23번</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid #333;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+            padding: 12px;
+        }
+        
+        td {
+            padding: 10px;
+        }
+
+
+        .productName, .price {
+            text-align: center;
+        }
+
+        .total {
+            background-color: #f5f5f5;
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>상품명</th>
+            <th>가격</th>
+            <th>수량</th>
+            <th>합계</th>
+        </tr>
+        <tr>
+            <td class="productName">노트북</td>
+            <td>1,200,000</td>
+            <td>1</td>
+            <td class="price">1,200,000</td>
+        </tr>
+        <tr>
+            <td class="productName">마우스</td>
+            <td>35,000</td>
+            <td>2</td>
+            <td class="price">70,000</td>
+        </tr>
+            <tr>
+            <td class="productName">마우스</td>
+            <td>35,000</td>
+            <td>2</td>
+            <td class="price">70,000</td>
+        </tr>
+        <tr>
+            <td class="total" colspan="4">총합: 1,325,000</td>
+        </tr>
+    </table>
+</body>
+</html>
+<!--[구성]
+| 상품명   | 가격     | 수량 | 합계     |
+|---------|---------|------|---------|
+| 노트북   | 1,200,000 | 1  | 1,200,000 |
+| 마우스   | 35,000   | 2   | 70,000   |
+| 키보드   | 55,000   | 1   | 55,000   |
+|         |          |      | 총합: 1,325,000 |
+
+[스타일]
+- 테두리 1px solid #ddd, border-collapse: collapse
+- th: 배경색 #333, 글자색 white, 패딩 12px
+- td: 패딩 10px, 텍스트 오른쪽 정렬 (가격 컬럼)
+- 마지막 행(총합): 배경색 #f5f5f5, font-weight bold-->

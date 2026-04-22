@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>심화 예제 1번</title>
+    <style>
+        * {
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .card {
+            display: inline-block;
+            width: 30%;
+            margin: 1.5%;
+            vertical-align: top;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 3px solid #ddd;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+            border: 15px solid black;
+            border-radius: 15px;
+            padding: 0px;
+            margin: 0;
+            background-color: black;
+        }
+
+        p {
+            color: gray;
+            position: relative;
+            top: 5px;
+            left: 18px;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        span.price {
+            position: relative;
+            color: red;
+            left: 200px;
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>학용품 카탈로그</h1>
+        <div>
+            <div class="card">
+                <h3>볼펜</h3>
+                <p>메모용 모나미 볼펜</p>
+                <span class="price">2,500원</span>
+            </div>
+            <div class="card">
+                <h3>지우개</h3>
+                <p>잘 지워지는 지우개</p>
+                <span class="price">1,500원</span>
+            </div>
+            <div class="card">
+                <h3>연필</h3>
+                <p>필기용 연필</p>
+                <span class="price">1,200원</span>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <h3>포스트잇</h3>
+                <p>메모용 포스트잇</p>
+                <span class="price">1,800원</span>
+            </div>
+            <div class="card">
+                <h3>샤프</h3>
+                <p>날카로운 필기용 샤프</p>
+                <span class="price">3,000원</span>
+            </div>
+            <div class="card">
+                <h3>형광펜</h3>
+                <p>하이라이트용 형광펜</p>
+                <span class="price">2,000원</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
