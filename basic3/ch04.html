@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4번이지롱</title>
+</head>
+<body>
+    <script>
+        // 변수 let
+        // 변수는 말 그대로 변할 수 있는 값이기에 상수로 선언하지 않음.
+        let searchValue = "자바";    // 검색어
+        searchValue = "자바 스크립트";
+
+        let onClick = () => {
+            console.log("클릭 이벤트 처리");
+        }
+
+        // onClick로 let으로 선언한 변수이기에 재대입이 가능하다
+        onClick = () => {
+            console.log("새로운 클릭 이벤트 처리");
+        }
+
+        let foundStudent = {
+            name: "김준일",
+            age: 33,
+        };
+        foundStudent = {
+            name: "김준이",
+            age: 34,
+        }
+
+        onClick();
+        console.log(searchValue);
+        console.log(foundStudent);
+    </script>
+</body>
+</html>
