@@ -120,12 +120,12 @@
     </div>
 
     <script>
-        let userList = [];
+let userList = [];
 
         function autoIncrement() {
             let currentId = 0;
 
-            return function() {
+            return function () {
                 currentId++;
                 return currentId;
             }
@@ -137,6 +137,7 @@
 
         for (let inputBox of inputBoxs) {
             const inputElement = inputBox.querySelector("input");
+
             inputElement.onfocus = (event) => {
                 inputBox.classList.add("input-is-not-empty");
             }
@@ -144,22 +145,22 @@
             inputElement.onblur = (event) => {
                 if (!event.target.value) {
                     inputBox.classList.remove("input-is-not-empty");
-                   }
+                }
             }
         }
 
         const registerButton = document.querySelector(".register-button");
         registerButton.onclick = () => {
-            const inputs = Array.from(inputBoxs).array.map(inputBox => inputBox.querySelector("input").value);
+            const inputs = Array.from(inputBoxs).map(inputBox => inputBox.querySelector("input"));
             let newUser = {
-                id : getNewId(),
+                id: getNewId(),
             }
 
             Array.from(inputs).forEach(element => {
                 const {name, value} = element;
                 newUser = {
                     ...newUser,
-                    [element.name]: element.value,
+                    [name]: value,
                 }
             });
 
